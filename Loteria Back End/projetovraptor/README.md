@@ -1,6 +1,6 @@
 # Loteria
 
-Instalado o tomcat9 e rodando o login e cadastar
+Instalado o tomcat9 e rodando o login e cadastar...
 
 - Pagina login 
    http://localhost:8080/projetovraptor/login
@@ -50,8 +50,87 @@ public class CadastrarController {
 	}	
 }
 
+```
+
+
+
+Navegar entre paginas com o taglib
+
+```html
+<!-- <c:url value="aquiVemApagina"/> -->
+
+ <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href=<c:url value="dashboard"/>>
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+```
+
+```html
+  <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href=<c:url value="novaaposta"/> >
+          <i class="fas fa-fw fa-cube"></i>
+          <span>Nova Aposta</span></a>
+      </li>
 
 ```
+
+
+### Passando dados do HTML para Java com a taglib
+
+ ```html
+
+ <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+```
+
+### Primeira etapa exibir ao dar o submit exibir na tela executei dentro do método salvausuario criado dentro do DashboardController.
+
+
+### Alterada a tag <a> por <button> para realizar o submit no form 
+
+```html
+                <form class="user" method="post" action="<c:url value="dashboard/salvausuario"/>">
+
+	    	<button type="submit"class="btn btn-primary btn-user btn-block"> Cadastrar </button>   
+
+```
+
+### Classe DashboardControle teste do métodp salvausuario.
+
+```java
+package br.com.caelum.vraptor.controller;
+import br.com.caelum.vraptor.Controller;
+import br.com.caelum.vraptor.Get;
+import br.com.caelum.vraptor.Path;
+import br.com.caelum.vraptor.Post;
+
+@Path("dashboard")
+@Controller
+public class DashboardController {
+	
+	 @Get("")
+	 public void dashboard() { 	 
+		 
+	 }
+	 @Post("salvausuario")
+	 public void salvaUsuario() {
+		 System.out.println("\n\n#### Execultei ####\n\n\n");
+	 }
+}
+ 
+```
+
+
+
+
+### Criada a página Resultado de apostas.
+
+![image](https://github.com/DevanaSena/Trevo/assets/45314696/11e664bb-fac9-4e7c-ba6f-ea7f488392b1)
+
+
 # Tela de Cadastro
 ![image](https://github.com/DevanaSena/Trevo/assets/45314696/1b42f55a-51a2-42af-86d2-d8b6942ba5d1)
 
