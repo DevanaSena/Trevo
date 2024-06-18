@@ -9,6 +9,6 @@ public class DashboardController {
 	
 	 @Get("")
 	 public void dashboard() {
-		 
+	 	 
 	 }
 }

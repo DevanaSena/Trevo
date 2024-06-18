@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +35,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion no-print" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href=<c:url value="dashboard"/>>
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -46,7 +47,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href=<c:url value="dashboard"/>>
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -61,13 +62,13 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="novaaposta.html">
+        <a class="nav-link" href=<c:url value="novaaposta"/>>
           <i class="fas fa-fw fa-cube"></i>
           <span>Nova Aposta</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="apostas.html">
+        <a class="nav-link" href=<c:url value="apostas"/>>
           <i class="fas fa-fw fa-cubes"></i>
           <span>Apostas</span></a>
       </li>
@@ -175,7 +176,7 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nome Usuario</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                 <img class="img-profile rounded-circle" src="https://avatars.githubusercontent.com/u/45314696?v=4" alt="Muito Gata">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -355,7 +356,7 @@
 
                 </div>
                 <div class="card-footer text-center">
-                  <a href="resultado.html" class="btn btn-primary btn-icon-split btn-lg mt-3 mb-3">
+                  <a href=<c:url value="resultado"/> class="btn btn-primary btn-icon-split btn-lg mt-3 mb-3">
                     <span class="icon text-white-50">
                       <i class="fas fa-check"></i>
                     </span>
@@ -409,7 +410,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href=<c:url value="login"/>> Logout</a>
         </div>
       </div>
     </div>

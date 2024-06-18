@@ -48,7 +48,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href=<c:url value="dashboard"/>>
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -63,13 +63,13 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="novaaposta.html">
+        <a class="nav-link" href=<c:url value="novaaposta"/> >
           <i class="fas fa-fw fa-cube"></i>
           <span>Nova Aposta</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="apostas.html">
+        <a class="nav-link" href=<c:url value="apostas"/>>
           <i class="fas fa-fw fa-cubes"></i>
           <span>Apostas</span></a>
       </li>
@@ -401,7 +401,7 @@
         
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="login.html">Sair</a>
+          <a class="btn btn-primary" href=<c:url value="login"/>> Sair</a>
         </div>
       </div>
     </div>
