@@ -1,4 +1,4 @@
-# Loteria
+# Loteria Trevo
 
 Instalado o tomcat9 e rodando o login e cadastar...
 
@@ -146,8 +146,7 @@ public class DashboardController {
 # Nova Aposta
 ![image](https://github.com/DevanaSena/Trevo/assets/45314696/64ca7f0e-e936-45cc-943c-819e434c0a0b)
 
-
-
+ ♥ Amando  ♥  fazer passo a passo do Projeto do [While True](https://www.youtube.com/@WhileTrue) - Loteria Java Web com Tiago Luz ♥ 
 
 
 
