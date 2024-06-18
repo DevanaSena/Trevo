@@ -14,4 +14,6 @@
 # Nova Aposta
 ![image](https://github.com/DevanaSena/Trevo/assets/45314696/64ca7f0e-e936-45cc-943c-819e434c0a0b)
 
+# Resultado 
+![image](https://github.com/DevanaSena/Trevo/assets/45314696/f1df317b-8828-40d7-97d8-b97bb8a71b7b)
 
